@@ -57,9 +57,9 @@ export const MessageConverter = (action) => {
     case `${actions.insertOrderedList}`:
       return `zss_editor.setOrderedList();`;
     case `${actions.insertLink}`:
-      return `zss_editor.insertLink('${action.data.url}, ${action.data.title}');`;
+      return `zss_editor.insertLink('${action.data.url}', '${action.data.title}');`;
     case `${actions.updateLink}`:
-      return `zss_editor.updateLink('${action.data.url}, ${action.data.title}');`;
+      return `zss_editor.updateLink('${action.data.url}', '${action.data.title}');`;
     case `${actions.insertImage}`:
       return `zss_editor.insertImage('${action.data}');`;
     case `${actions.setSubscript}`:
