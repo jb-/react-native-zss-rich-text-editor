@@ -1,3 +1,4 @@
+export const template = () => String.raw`
 <!DOCTYPE html>
 <html>
 	<head>
@@ -1751,3 +1752,4 @@
 		<div id="zss_editor_footer"></div>
 	</body>
 </html>
+`
